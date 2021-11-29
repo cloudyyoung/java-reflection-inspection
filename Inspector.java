@@ -8,13 +8,20 @@ import java.lang.reflect.*;
  */
 public class Inspector {
 
+    public void inspect(Object obj, boolean recursive) {
+        if (obj.getClass().isArray()) {
+            this.inspectArray(obj, recursive, 0);
+        } else {
+            this.inspectClass(obj, recursive, 0);
+        }
+    }
+
     private void print(String string, int depth) {
         System.out.println("    ".repeat(depth) + string);
     }
 
-    public void inspect(Object obj, boolean recursive) {
-        Class<?> c = obj.getClass();
-        inspectClass(c, obj, recursive, 0);
+    private void inspectClass(Object obj, boolean recursive, int depth) {
+        this.inspectClass(obj.getClass(), obj, recursive, depth);
     }
 
     private void inspectClass(Class<?> c, Object obj, boolean recursive, int depth) {
@@ -76,7 +83,7 @@ public class Inspector {
 
         }
     }
-    
+
     private void aaaaa(Class<?> c, Field field, Object obj, boolean recursive, int depth) {
         Class<?> fieldType = field.getType();
         boolean isArray = fieldType.isArray();
@@ -115,6 +122,32 @@ public class Inspector {
                 this.inspectClass(obj.getClass(), obj, recursive, depth + 2);
             }
         }
+    }
+
+    private void ccccc(Object array, boolean recursive, int depth) {
+        Class<?> componentType = array.getClass().getComponentType();
+        int length = Array.getLength(array);
+        this.print("Component type: " + componentType, depth);
+        this.print("Length: " + length, depth);
+
+        if (length > 0) {
+            this.print("Entries -> ", depth);
+
+            for (int t = 0; t < length; t++) {
+                Object object = Array.get(array, t);
+                this.bbbbb(componentType, object, recursive, depth + 1);
+            }
+        } else {
+            this.print("Entries: EMPTY", depth);
+        }
+    }
+
+    private void inspectArray(Object array, boolean recursive, int depth) {
+        Class<?> c = array.getClass();
+        this.print("Name: " + c.getName(), depth);
+        this.print("Type name: " + c.getTypeName(), depth);
+        this.print("Modifiers: " + Modifier.toString(c.getModifiers()), depth);
+        this.ccccc(array, recursive, depth);
     }
 
     // https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Executable.html
@@ -160,4 +193,5 @@ public class Inspector {
                 || clazz.equals(Byte.class) || clazz.equals(Short.class) || clazz.equals(Double.class)
                 || clazz.equals(Long.class) || clazz.equals(Float.class);
     }
+
 }
