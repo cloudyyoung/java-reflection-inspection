@@ -8,7 +8,13 @@ import java.lang.reflect.*;
  */
 public class DriverBonus {
 
-    public static void main(String[] args) throws Exception {
+    
+    /** 
+     * The main method
+     * 
+     * @param args command line arguments
+     */
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Name of class containing inspect method: ");

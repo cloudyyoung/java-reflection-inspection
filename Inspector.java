@@ -1,12 +1,18 @@
 import java.lang.reflect.*;
 
 /**
- * CPSC 501 Inspector starter class
+ * CPSC 501 Inspector class
  *
- * @author Jonathan Hudson
+ * @author Yunfan Yang
  */
 public class Inspector {
 
+    /**
+     * Inspects an object
+     * 
+     * @param obj       the object to inspect
+     * @param recursive if recursively inspect
+     */
     public void inspect(Object obj, boolean recursive) {
         if (obj.getClass().isArray()) {
             this.inspectArray(obj, recursive, 0);
@@ -15,17 +21,37 @@ public class Inspector {
         }
     }
 
+    /**
+     * Print a string by indentation depth
+     * 
+     * @param string the string to print
+     * @param depth  the number of identation
+     */
     private void print(String string, int depth) {
         System.out.println("    ".repeat(depth) + string);
     }
 
+    /**
+     * Inspects the class of an object
+     * 
+     * @param obj       the object to inspect
+     * @param recursive if recursively inspect
+     * @param depth     the indentation depth
+     */
     private void inspectClass(Object obj, boolean recursive, int depth) {
         this.inspectClass(obj.getClass(), obj, recursive, depth);
     }
 
+    /**
+     * Inspects a specified class and by an object
+     * 
+     * @param c         the class to inspect
+     * @param obj       the object to inspect
+     * @param recursive if recursively inspect
+     * @param depth     the indentation depth
+     */
     private void inspectClass(Class<?> c, Object obj, boolean recursive, int depth) {
         if (c != null) {
-            // note: depth will be needed to capture the output indentation level
             this.print("Name: " + c.getName(), depth);
 
             this.inspectSuperClass(c, obj, recursive, depth);
@@ -36,6 +62,14 @@ public class Inspector {
         }
     }
 
+    /**
+     * Inspects the super class of a class
+     * 
+     * @param c         the class to inspect
+     * @param obj       the object to inspect
+     * @param recursive if recursively inspect
+     * @param depth     the indentation depth
+     */
     private void inspectSuperClass(Class<?> c, Object obj, boolean recursive, int depth) {
         if (c != null && c.getSuperclass() != null) {
             this.print("Superclass (" + c.getName() + ") -> ", depth);
@@ -46,6 +80,14 @@ public class Inspector {
         }
     }
 
+    /**
+     * Inspects the interfaces of a class
+     * 
+     * @param c         the class to inspect
+     * @param obj       the object to inspect
+     * @param recursive if recursively inspect
+     * @param depth     the indentation depth
+     */
     private void inspectInterfaces(Class<?> c, Object obj, boolean recursive, int depth) {
         Class<?>[] interfaces = c.getInterfaces();
         if (interfaces != null && interfaces.length != 0) {
@@ -59,6 +101,14 @@ public class Inspector {
         }
     }
 
+    /**
+     * Inspects the constructors of a class
+     * 
+     * @param c         the class to inspect
+     * @param obj       the object to inspect
+     * @param recursive if recursively inspect
+     * @param depth     the indentation depth
+     */
     private void inspectConstructors(Class<?> c, Object obj, boolean recursive, int depth) {
         Constructor<?>[] constructors = c.getConstructors();
         if (constructors != null && constructors.length != 0) {
@@ -72,6 +122,14 @@ public class Inspector {
         }
     }
 
+    /**
+     * Inspects the methods of a class
+     * 
+     * @param c         the class to inspect
+     * @param obj       the object to inspect
+     * @param recursive if recursively inspect
+     * @param depth     the indentation depth
+     */
     private void inspectMethods(Class<?> c, Object obj, boolean recursive, int depth) {
         Method[] methods = c.getDeclaredMethods();
         if (methods != null && methods.length != 0) {
@@ -85,6 +143,14 @@ public class Inspector {
         }
     }
 
+    /**
+     * Inspects the fields of a class
+     * 
+     * @param c         the class to inspect
+     * @param obj       the object to inspect
+     * @param recursive if recursively inspect
+     * @param depth     the indentation depth
+     */
     private void inspectFields(Class<?> c, Object obj, boolean recursive, int depth) {
         Field[] fields = c.getDeclaredFields();
         if (fields != null && fields.length != 0) {
@@ -98,6 +164,15 @@ public class Inspector {
         }
     }
 
+    /**
+     * Inspects a field of a class
+     * 
+     * @param c         the class to inspect
+     * @param field     the fgield to inspect
+     * @param obj       the object to inspect
+     * @param recursive if recursively inspect
+     * @param depth     the indentation depth
+     */
     private void inspectField(Class<?> c, Field field, Object obj, boolean recursive, int depth) {
         Class<?> fieldType = field.getType();
         boolean isArray = fieldType.isArray();
@@ -125,6 +200,14 @@ public class Inspector {
         }
     }
 
+    /**
+     * Inspects the value by an object
+     * 
+     * @param c         the class to inspect
+     * @param obj       the object to inspect
+     * @param recursive if recursively inspect
+     * @param depth     the indentation depth
+     */
     private void inspectObjectValue(Class<?> c, Object obj, boolean recursive, int depth) {
         if (c.isPrimitive() || this.isWrapperType(c) || obj == null) {
             this.print("Value: " + obj, depth);
@@ -138,6 +221,13 @@ public class Inspector {
         }
     }
 
+    /**
+     * Inspects all the values in an array
+     * 
+     * @param array     the array to inspect
+     * @param recursive if recursively inspect
+     * @param depth     the indentation depth
+     */
     private void inspectArrayValues(Object array, boolean recursive, int depth) {
         Class<?> componentType = array.getClass().getComponentType();
         int length = Array.getLength(array);
@@ -156,6 +246,13 @@ public class Inspector {
         }
     }
 
+    /**
+     * Inspects an array
+     * 
+     * @param array     the array to inspect
+     * @param recursive if recursively inspect
+     * @param depth     the indentation depth
+     */
     private void inspectArray(Object array, boolean recursive, int depth) {
         Class<?> c = array.getClass();
         this.print("Name: " + c.getName(), depth);
@@ -164,6 +261,14 @@ public class Inspector {
         this.inspectArrayValues(array, recursive, depth);
     }
 
+    /**
+     * Inspects an executable
+     * 
+     * @param executable the executable to inspect
+     * @param obj        the object to inspect
+     * @param recursive  if recursively inspect
+     * @param depth      the indentation depth
+     */
     // https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Executable.html
     private void inspectExecutable(Executable executable, Object obj, boolean recursive, int depth) {
         this.print("Name: " + executable.getName(), depth);
@@ -197,10 +302,23 @@ public class Inspector {
         }
     }
 
+    /**
+     * Returns the hash signature of an object
+     * 
+     * @param obj the object to get hash signature
+     * @return the hash signature
+     */
     private String getObjectHashSignature(Object obj) {
         return "" + obj.getClass().getName() + '@' + Integer.toHexString(obj.hashCode());
     }
 
+    /**
+     * Returns if a class is a wrapper type
+     * 
+     * @param clazz the class to check
+     * @return if true, the class is a wrapper class of a primitive type; else, it
+     *         is not
+     */
     // https://stackoverflow.com/questions/709961/determining-if-an-object-is-of-primitive-type
     private boolean isWrapperType(Class<?> clazz) {
         return clazz.equals(Boolean.class) || clazz.equals(Integer.class) || clazz.equals(Character.class)
