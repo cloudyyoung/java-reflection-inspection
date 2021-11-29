@@ -105,7 +105,7 @@ public class Inspector {
         this.print("Modifiers: " + Modifier.toString(field.getModifiers()), depth);
 
         if (isArray) {
-            // Handle array
+			this.ccccc(value, false, depth);
         } else {
             this.bbbbb(fieldType, value, recursive, depth);
         }
