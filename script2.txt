@@ -1,0 +1,170 @@
+======================================================
+Filename: script2.txt
+Running Test: ClassA
+Recursive: true
+Name: ClassA
+Superclass (ClassA) -> 
+    SUPERCLASS (ClassA)
+        Name: java.lang.Object
+        Superclass (java.lang.Object): NONE
+        Interfaces (java.lang.Object): NONE
+        Constructors (java.lang.Object) -> 
+            CONSTRUCTOR (java.lang.Object)
+                Name: java.lang.Object
+                Modifiers: public
+                Parameter types: NONE
+                Exceptions: NONE
+        Methods (java.lang.Object) -> 
+            METHOD (java.lang.Object)
+                Name: finalize
+                Modifiers: protected
+                Parameter types: NONE
+                Return type: void
+                Exceptions -> 
+                    java.lang.Throwable
+            METHOD (java.lang.Object)
+                Name: wait
+                Modifiers: public final
+                Parameter types: [long, int]
+                Return type: void
+                Exceptions -> 
+                    java.lang.InterruptedException
+            METHOD (java.lang.Object)
+                Name: wait
+                Modifiers: public final
+                Parameter types: NONE
+                Return type: void
+                Exceptions -> 
+                    java.lang.InterruptedException
+            METHOD (java.lang.Object)
+                Name: wait
+                Modifiers: public final native
+                Parameter types: [long]
+                Return type: void
+                Exceptions -> 
+                    java.lang.InterruptedException
+            METHOD (java.lang.Object)
+                Name: equals
+                Modifiers: public
+                Parameter types: [java.lang.Object]
+                Return type: boolean
+                Exceptions: NONE
+            METHOD (java.lang.Object)
+                Name: toString
+                Modifiers: public
+                Parameter types: NONE
+                Return type: java.lang.String
+                Exceptions: NONE
+            METHOD (java.lang.Object)
+                Name: hashCode
+                Modifiers: public native
+                Parameter types: NONE
+                Return type: int
+                Exceptions: NONE
+            METHOD (java.lang.Object)
+                Name: getClass
+                Modifiers: public final native
+                Parameter types: NONE
+                Return type: java.lang.Class
+                Exceptions: NONE
+            METHOD (java.lang.Object)
+                Name: clone
+                Modifiers: protected native
+                Parameter types: NONE
+                Return type: java.lang.Object
+                Exceptions -> 
+                    java.lang.CloneNotSupportedException
+            METHOD (java.lang.Object)
+                Name: notify
+                Modifiers: public final native
+                Parameter types: NONE
+                Return type: void
+                Exceptions: NONE
+            METHOD (java.lang.Object)
+                Name: notifyAll
+                Modifiers: public final native
+                Parameter types: NONE
+                Return type: void
+                Exceptions: NONE
+        Fields (java.lang.Object): NONE 
+Interfaces (ClassA) ->
+    INTERFACE (ClassA)
+        Name: java.io.Serializable
+        Superclass (java.io.Serializable): NONE
+        Interfaces (java.io.Serializable): NONE
+        Constructors (java.io.Serializable): NONE
+        Methods (java.io.Serializable): NONE
+        Fields (java.io.Serializable): NONE 
+    INTERFACE (ClassA)
+        Name: java.lang.Runnable
+        Superclass (java.lang.Runnable): NONE
+        Interfaces (java.lang.Runnable): NONE
+        Constructors (java.lang.Runnable): NONE
+        Methods (java.lang.Runnable) -> 
+            METHOD (java.lang.Runnable)
+                Name: run
+                Modifiers: public abstract
+                Parameter types: NONE
+                Return type: void
+                Exceptions: NONE
+        Fields (java.lang.Runnable): NONE 
+Constructors (ClassA) -> 
+    CONSTRUCTOR (ClassA)
+        Name: ClassA
+        Modifiers: public
+        Parameter types: NONE
+        Exceptions: NONE
+    CONSTRUCTOR (ClassA)
+        Name: ClassA
+        Modifiers: public
+        Parameter types: [int]
+        Exceptions: NONE
+Methods (ClassA) -> 
+    METHOD (ClassA)
+        Name: run
+        Modifiers: public
+        Parameter types: NONE
+        Return type: void
+        Exceptions: NONE
+    METHOD (ClassA)
+        Name: toString
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (ClassA)
+        Name: getVal
+        Modifiers: public
+        Parameter types: NONE
+        Return type: int
+        Exceptions: NONE
+    METHOD (ClassA)
+        Name: setVal
+        Modifiers: public
+        Parameter types: [int]
+        Return type: void
+        Exceptions -> 
+            java.lang.Exception
+    METHOD (ClassA)
+        Name: printSomething
+        Modifiers: private
+        Parameter types: NONE
+        Return type: void
+        Exceptions: NONE
+Fields (ClassA) -> 
+    FIELD (ClassA)
+        Name: val
+        Type: int
+        Modifiers: private
+        Value: 12
+    FIELD (ClassA)
+        Name: val2
+        Type: double
+        Modifiers: private
+        Value: 0.2
+    FIELD (ClassA)
+        Name: val3
+        Type: boolean
+        Modifiers: private
+        Value: true
+======================================================

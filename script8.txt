@@ -1,0 +1,1244 @@
+======================================================
+Filename: script8.txt
+Running Test: Test String
+Recursive: true
+Name: java.lang.String
+Superclass (java.lang.String) -> 
+    SUPERCLASS (java.lang.String)
+        Name: java.lang.Object
+        Superclass (java.lang.Object): NONE
+        Interfaces (java.lang.Object): NONE
+        Constructors (java.lang.Object) -> 
+            CONSTRUCTOR (java.lang.Object)
+                Name: java.lang.Object
+                Modifiers: public
+                Parameter types: NONE
+                Exceptions: NONE
+        Methods (java.lang.Object) -> 
+            METHOD (java.lang.Object)
+                Name: finalize
+                Modifiers: protected
+                Parameter types: NONE
+                Return type: void
+                Exceptions -> 
+                    java.lang.Throwable
+            METHOD (java.lang.Object)
+                Name: wait
+                Modifiers: public final
+                Parameter types: [long, int]
+                Return type: void
+                Exceptions -> 
+                    java.lang.InterruptedException
+            METHOD (java.lang.Object)
+                Name: wait
+                Modifiers: public final
+                Parameter types: NONE
+                Return type: void
+                Exceptions -> 
+                    java.lang.InterruptedException
+            METHOD (java.lang.Object)
+                Name: wait
+                Modifiers: public final native
+                Parameter types: [long]
+                Return type: void
+                Exceptions -> 
+                    java.lang.InterruptedException
+            METHOD (java.lang.Object)
+                Name: equals
+                Modifiers: public
+                Parameter types: [java.lang.Object]
+                Return type: boolean
+                Exceptions: NONE
+            METHOD (java.lang.Object)
+                Name: toString
+                Modifiers: public
+                Parameter types: NONE
+                Return type: java.lang.String
+                Exceptions: NONE
+            METHOD (java.lang.Object)
+                Name: hashCode
+                Modifiers: public native
+                Parameter types: NONE
+                Return type: int
+                Exceptions: NONE
+            METHOD (java.lang.Object)
+                Name: getClass
+                Modifiers: public final native
+                Parameter types: NONE
+                Return type: java.lang.Class
+                Exceptions: NONE
+            METHOD (java.lang.Object)
+                Name: clone
+                Modifiers: protected native
+                Parameter types: NONE
+                Return type: java.lang.Object
+                Exceptions -> 
+                    java.lang.CloneNotSupportedException
+            METHOD (java.lang.Object)
+                Name: notify
+                Modifiers: public final native
+                Parameter types: NONE
+                Return type: void
+                Exceptions: NONE
+            METHOD (java.lang.Object)
+                Name: notifyAll
+                Modifiers: public final native
+                Parameter types: NONE
+                Return type: void
+                Exceptions: NONE
+        Fields (java.lang.Object): NONE 
+Interfaces (java.lang.String) ->
+    INTERFACE (java.lang.String)
+        Name: java.io.Serializable
+        Superclass (java.io.Serializable): NONE
+        Interfaces (java.io.Serializable): NONE
+        Constructors (java.io.Serializable): NONE
+        Methods (java.io.Serializable): NONE
+        Fields (java.io.Serializable): NONE 
+    INTERFACE (java.lang.String)
+        Name: java.lang.Comparable
+        Superclass (java.lang.Comparable): NONE
+        Interfaces (java.lang.Comparable): NONE
+        Constructors (java.lang.Comparable): NONE
+        Methods (java.lang.Comparable) -> 
+            METHOD (java.lang.Comparable)
+                Name: compareTo
+                Modifiers: public abstract
+                Parameter types: [java.lang.Object]
+                Return type: int
+                Exceptions: NONE
+        Fields (java.lang.Comparable): NONE 
+    INTERFACE (java.lang.String)
+        Name: java.lang.CharSequence
+        Superclass (java.lang.CharSequence): NONE
+        Interfaces (java.lang.CharSequence): NONE
+        Constructors (java.lang.CharSequence): NONE
+        Methods (java.lang.CharSequence) -> 
+            METHOD (java.lang.CharSequence)
+                Name: length
+                Modifiers: public abstract
+                Parameter types: NONE
+                Return type: int
+                Exceptions: NONE
+            METHOD (java.lang.CharSequence)
+                Name: toString
+                Modifiers: public abstract
+                Parameter types: NONE
+                Return type: java.lang.String
+                Exceptions: NONE
+            METHOD (java.lang.CharSequence)
+                Name: compare
+                Modifiers: public static
+                Parameter types: [java.lang.CharSequence, java.lang.CharSequence]
+                Return type: int
+                Exceptions: NONE
+            METHOD (java.lang.CharSequence)
+                Name: charAt
+                Modifiers: public abstract
+                Parameter types: [int]
+                Return type: char
+                Exceptions: NONE
+            METHOD (java.lang.CharSequence)
+                Name: isEmpty
+                Modifiers: public
+                Parameter types: NONE
+                Return type: boolean
+                Exceptions: NONE
+            METHOD (java.lang.CharSequence)
+                Name: codePoints
+                Modifiers: public
+                Parameter types: NONE
+                Return type: java.util.stream.IntStream
+                Exceptions: NONE
+            METHOD (java.lang.CharSequence)
+                Name: subSequence
+                Modifiers: public abstract
+                Parameter types: [int, int]
+                Return type: java.lang.CharSequence
+                Exceptions: NONE
+            METHOD (java.lang.CharSequence)
+                Name: chars
+                Modifiers: public
+                Parameter types: NONE
+                Return type: java.util.stream.IntStream
+                Exceptions: NONE
+            METHOD (java.lang.CharSequence)
+                Name: lambda$codePoints$1
+                Modifiers: private
+                Parameter types: NONE
+                Return type: java.util.Spliterator$OfInt
+                Exceptions: NONE
+            METHOD (java.lang.CharSequence)
+                Name: lambda$chars$0
+                Modifiers: private
+                Parameter types: NONE
+                Return type: java.util.Spliterator$OfInt
+                Exceptions: NONE
+        Fields (java.lang.CharSequence): NONE 
+    INTERFACE (java.lang.String)
+        Name: java.lang.constant.Constable
+        Superclass (java.lang.constant.Constable): NONE
+        Interfaces (java.lang.constant.Constable): NONE
+        Constructors (java.lang.constant.Constable): NONE
+        Methods (java.lang.constant.Constable) -> 
+            METHOD (java.lang.constant.Constable)
+                Name: describeConstable
+                Modifiers: public abstract
+                Parameter types: NONE
+                Return type: java.util.Optional
+                Exceptions: NONE
+        Fields (java.lang.constant.Constable): NONE 
+    INTERFACE (java.lang.String)
+        Name: java.lang.constant.ConstantDesc
+        Superclass (java.lang.constant.ConstantDesc): NONE
+        Interfaces (java.lang.constant.ConstantDesc): NONE
+        Constructors (java.lang.constant.ConstantDesc): NONE
+        Methods (java.lang.constant.ConstantDesc) -> 
+            METHOD (java.lang.constant.ConstantDesc)
+                Name: resolveConstantDesc
+                Modifiers: public abstract
+                Parameter types: [java.lang.invoke.MethodHandles$Lookup]
+                Return type: java.lang.Object
+                Exceptions -> 
+                    java.lang.ReflectiveOperationException
+        Fields (java.lang.constant.ConstantDesc): NONE 
+Constructors (java.lang.String) -> 
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [[B]
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [[B, int, int]
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [[B, java.nio.charset.Charset]
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [[B, java.lang.String]
+        Exceptions -> 
+            java.io.UnsupportedEncodingException
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [[B, int, int, java.nio.charset.Charset]
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [java.lang.StringBuilder]
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [java.lang.StringBuffer]
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [[C, int, int]
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [[C]
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: NONE
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [[B, int, int, java.lang.String]
+        Exceptions -> 
+            java.io.UnsupportedEncodingException
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [[B, int]
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [[B, int, int, int]
+        Exceptions: NONE
+    CONSTRUCTOR (java.lang.String)
+        Name: java.lang.String
+        Modifiers: public
+        Parameter types: [[I, int, int]
+        Exceptions: NONE
+Methods (java.lang.String) -> 
+    METHOD (java.lang.String)
+        Name: value
+        Modifiers: 
+        Parameter types: NONE
+        Return type: [B
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: equals
+        Modifiers: public
+        Parameter types: [java.lang.Object]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: length
+        Modifiers: public
+        Parameter types: NONE
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: toString
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: hashCode
+        Modifiers: public
+        Parameter types: NONE
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: getChars
+        Modifiers: public
+        Parameter types: [int, int, [C, int]
+        Return type: void
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: compareTo
+        Modifiers: public volatile
+        Parameter types: [java.lang.Object]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: compareTo
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: indexOf
+        Modifiers: public
+        Parameter types: [int, int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: indexOf
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: indexOf
+        Modifiers: public
+        Parameter types: [java.lang.String, int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: indexOf
+        Modifiers: public
+        Parameter types: [int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: indexOf
+        Modifiers: static
+        Parameter types: [[B, byte, int, java.lang.String, int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: checkIndex
+        Modifiers: static
+        Parameter types: [int, int]
+        Return type: void
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: valueOf
+        Modifiers: public static
+        Parameter types: [[C]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: valueOf
+        Modifiers: public static
+        Parameter types: [java.lang.Object]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: valueOf
+        Modifiers: public static
+        Parameter types: [long]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: valueOf
+        Modifiers: public static
+        Parameter types: [[C, int, int]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: valueOf
+        Modifiers: public static
+        Parameter types: [int]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: valueOf
+        Modifiers: public static
+        Parameter types: [char]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: valueOf
+        Modifiers: public static
+        Parameter types: [double]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: valueOf
+        Modifiers: public static
+        Parameter types: [float]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: valueOf
+        Modifiers: public static
+        Parameter types: [boolean]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: coder
+        Modifiers: 
+        Parameter types: NONE
+        Return type: byte
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: rangeCheck
+        Modifiers: private static
+        Parameter types: [[C, int, int]
+        Return type: java.lang.Void
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: checkBoundsOffCount
+        Modifiers: static
+        Parameter types: [int, int, int]
+        Return type: void
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: isLatin1
+        Modifiers: 
+        Parameter types: NONE
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: charAt
+        Modifiers: public
+        Parameter types: [int]
+        Return type: char
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: codePointAt
+        Modifiers: public
+        Parameter types: [int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: codePointBefore
+        Modifiers: public
+        Parameter types: [int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: codePointCount
+        Modifiers: public
+        Parameter types: [int, int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: offsetByCodePoints
+        Modifiers: public
+        Parameter types: [int, int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: checkBoundsBeginEnd
+        Modifiers: static
+        Parameter types: [int, int, int]
+        Return type: void
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: getBytes
+        Modifiers: public
+        Parameter types: [java.nio.charset.Charset]
+        Return type: [B
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: getBytes
+        Modifiers: 
+        Parameter types: [[B, int, int, byte, int]
+        Return type: void
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: getBytes
+        Modifiers: public
+        Parameter types: NONE
+        Return type: [B
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: getBytes
+        Modifiers: 
+        Parameter types: [[B, int, byte]
+        Return type: void
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: getBytes
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Return type: [B
+        Exceptions -> 
+            java.io.UnsupportedEncodingException
+    METHOD (java.lang.String)
+        Name: getBytes
+        Modifiers: public
+        Parameter types: [int, int, [B, int]
+        Return type: void
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: contentEquals
+        Modifiers: public
+        Parameter types: [java.lang.StringBuffer]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: contentEquals
+        Modifiers: public
+        Parameter types: [java.lang.CharSequence]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: nonSyncContentEquals
+        Modifiers: private
+        Parameter types: [java.lang.AbstractStringBuilder]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: regionMatches
+        Modifiers: public
+        Parameter types: [int, java.lang.String, int, int]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: regionMatches
+        Modifiers: public
+        Parameter types: [boolean, int, java.lang.String, int, int]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: startsWith
+        Modifiers: public
+        Parameter types: [java.lang.String, int]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: startsWith
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: lastIndexOf
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: lastIndexOf
+        Modifiers: public
+        Parameter types: [int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: lastIndexOf
+        Modifiers: static
+        Parameter types: [[B, byte, int, java.lang.String, int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: lastIndexOf
+        Modifiers: public
+        Parameter types: [int, int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: lastIndexOf
+        Modifiers: public
+        Parameter types: [java.lang.String, int]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: substring
+        Modifiers: public
+        Parameter types: [int, int]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: substring
+        Modifiers: public
+        Parameter types: [int]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: isEmpty
+        Modifiers: public
+        Parameter types: NONE
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: replace
+        Modifiers: public
+        Parameter types: [char, char]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: replace
+        Modifiers: public
+        Parameter types: [java.lang.CharSequence, java.lang.CharSequence]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: matches
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: replaceFirst
+        Modifiers: public
+        Parameter types: [java.lang.String, java.lang.String]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: replaceAll
+        Modifiers: public
+        Parameter types: [java.lang.String, java.lang.String]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: split
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Return type: [Ljava.lang.String;
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: split
+        Modifiers: public
+        Parameter types: [java.lang.String, int]
+        Return type: [Ljava.lang.String;
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: toLowerCase
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: toLowerCase
+        Modifiers: public
+        Parameter types: [java.util.Locale]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: toUpperCase
+        Modifiers: public
+        Parameter types: [java.util.Locale]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: toUpperCase
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: trim
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: strip
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: stripLeading
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: stripTrailing
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: indexOfNonWhitespace
+        Modifiers: private
+        Parameter types: NONE
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: lines
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.util.stream.Stream
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: repeat
+        Modifiers: public
+        Parameter types: [int]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: lastIndexOfNonWhitespace
+        Modifiers: private
+        Parameter types: NONE
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: outdent
+        Modifiers: private static
+        Parameter types: [java.util.List]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: isBlank
+        Modifiers: public
+        Parameter types: NONE
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: toCharArray
+        Modifiers: public
+        Parameter types: NONE
+        Return type: [C
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: format
+        Modifiers: public static transient
+        Parameter types: [java.lang.String, [Ljava.lang.Object;]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: format
+        Modifiers: public static transient
+        Parameter types: [java.util.Locale, java.lang.String, [Ljava.lang.Object;]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: resolveConstantDesc
+        Modifiers: public
+        Parameter types: [java.lang.invoke.MethodHandles$Lookup]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: resolveConstantDesc
+        Modifiers: public volatile
+        Parameter types: [java.lang.invoke.MethodHandles$Lookup]
+        Return type: java.lang.Object
+        Exceptions -> 
+            java.lang.ReflectiveOperationException
+    METHOD (java.lang.String)
+        Name: codePoints
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.util.stream.IntStream
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: equalsIgnoreCase
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: compareToIgnoreCase
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Return type: int
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: endsWith
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: subSequence
+        Modifiers: public
+        Parameter types: [int, int]
+        Return type: java.lang.CharSequence
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: concat
+        Modifiers: public
+        Parameter types: [java.lang.String]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: contains
+        Modifiers: public
+        Parameter types: [java.lang.CharSequence]
+        Return type: boolean
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: join
+        Modifiers: public static transient
+        Parameter types: [java.lang.CharSequence, [Ljava.lang.CharSequence;]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: join
+        Modifiers: public static
+        Parameter types: [java.lang.CharSequence, java.lang.Iterable]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: indent
+        Modifiers: public
+        Parameter types: [int]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: stripIndent
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: translateEscapes
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: chars
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.util.stream.IntStream
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: transform
+        Modifiers: public
+        Parameter types: [java.util.function.Function]
+        Return type: java.lang.Object
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: formatted
+        Modifiers: public transient
+        Parameter types: [[Ljava.lang.Object;]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: copyValueOf
+        Modifiers: public static
+        Parameter types: [[C, int, int]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: copyValueOf
+        Modifiers: public static
+        Parameter types: [[C]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: intern
+        Modifiers: public native
+        Parameter types: NONE
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: checkOffset
+        Modifiers: static
+        Parameter types: [int, int]
+        Return type: void
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: valueOfCodePoint
+        Modifiers: static
+        Parameter types: [int]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: describeConstable
+        Modifiers: public
+        Parameter types: NONE
+        Return type: java.util.Optional
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: lambda$stripIndent$3
+        Modifiers: private static
+        Parameter types: [int, java.lang.String]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: lambda$indent$2
+        Modifiers: private static
+        Parameter types: [int, java.lang.String]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: lambda$indent$1
+        Modifiers: private static
+        Parameter types: [java.lang.String]
+        Return type: java.lang.String
+        Exceptions: NONE
+    METHOD (java.lang.String)
+        Name: lambda$indent$0
+        Modifiers: private static
+        Parameter types: [java.lang.String, java.lang.String]
+        Return type: java.lang.String
+        Exceptions: NONE
+Fields (java.lang.String) -> 
+    FIELD (java.lang.String)
+        ERROR: Unable to make field private final byte[] java.lang.String.value accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+        Field: private final byte[] java.lang.String.value
+        Object: Test String
+        Exception: java.lang.reflect.InaccessibleObjectException: Unable to make field private final byte[] java.lang.String.value accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+    FIELD (java.lang.String)
+        ERROR: Unable to make field private final byte java.lang.String.coder accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+        Field: private final byte java.lang.String.coder
+        Object: Test String
+        Exception: java.lang.reflect.InaccessibleObjectException: Unable to make field private final byte java.lang.String.coder accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+    FIELD (java.lang.String)
+        ERROR: Unable to make field private int java.lang.String.hash accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+        Field: private int java.lang.String.hash
+        Object: Test String
+        Exception: java.lang.reflect.InaccessibleObjectException: Unable to make field private int java.lang.String.hash accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+    FIELD (java.lang.String)
+        ERROR: Unable to make field private boolean java.lang.String.hashIsZero accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+        Field: private boolean java.lang.String.hashIsZero
+        Object: Test String
+        Exception: java.lang.reflect.InaccessibleObjectException: Unable to make field private boolean java.lang.String.hashIsZero accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+    FIELD (java.lang.String)
+        ERROR: Unable to make field private static final long java.lang.String.serialVersionUID accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+        Field: private static final long java.lang.String.serialVersionUID
+        Object: Test String
+        Exception: java.lang.reflect.InaccessibleObjectException: Unable to make field private static final long java.lang.String.serialVersionUID accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+    FIELD (java.lang.String)
+        ERROR: Unable to make field static final boolean java.lang.String.COMPACT_STRINGS accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+        Field: static final boolean java.lang.String.COMPACT_STRINGS
+        Object: Test String
+        Exception: java.lang.reflect.InaccessibleObjectException: Unable to make field static final boolean java.lang.String.COMPACT_STRINGS accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+    FIELD (java.lang.String)
+        ERROR: Unable to make field private static final java.io.ObjectStreamField[] java.lang.String.serialPersistentFields accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+        Field: private static final java.io.ObjectStreamField[] java.lang.String.serialPersistentFields
+        Object: Test String
+        Exception: java.lang.reflect.InaccessibleObjectException: Unable to make field private static final java.io.ObjectStreamField[] java.lang.String.serialPersistentFields accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+    FIELD (java.lang.String)
+        Name: CASE_INSENSITIVE_ORDER
+        Type: java.util.Comparator
+        Modifiers: public static final
+        Value (ref): java.lang.String$CaseInsensitiveComparator@1c20c684
+            CLASS (java.lang.String$CaseInsensitiveComparator@1c20c684)
+                Name: java.lang.String$CaseInsensitiveComparator
+                Superclass (java.lang.String$CaseInsensitiveComparator) -> 
+                    SUPERCLASS (java.lang.String$CaseInsensitiveComparator)
+                        Name: java.lang.Object
+                        Superclass (java.lang.Object): NONE
+                        Interfaces (java.lang.Object): NONE
+                        Constructors (java.lang.Object) -> 
+                            CONSTRUCTOR (java.lang.Object)
+                                Name: java.lang.Object
+                                Modifiers: public
+                                Parameter types: NONE
+                                Exceptions: NONE
+                        Methods (java.lang.Object) -> 
+                            METHOD (java.lang.Object)
+                                Name: finalize
+                                Modifiers: protected
+                                Parameter types: NONE
+                                Return type: void
+                                Exceptions -> 
+                                    java.lang.Throwable
+                            METHOD (java.lang.Object)
+                                Name: wait
+                                Modifiers: public final
+                                Parameter types: [long, int]
+                                Return type: void
+                                Exceptions -> 
+                                    java.lang.InterruptedException
+                            METHOD (java.lang.Object)
+                                Name: wait
+                                Modifiers: public final
+                                Parameter types: NONE
+                                Return type: void
+                                Exceptions -> 
+                                    java.lang.InterruptedException
+                            METHOD (java.lang.Object)
+                                Name: wait
+                                Modifiers: public final native
+                                Parameter types: [long]
+                                Return type: void
+                                Exceptions -> 
+                                    java.lang.InterruptedException
+                            METHOD (java.lang.Object)
+                                Name: equals
+                                Modifiers: public
+                                Parameter types: [java.lang.Object]
+                                Return type: boolean
+                                Exceptions: NONE
+                            METHOD (java.lang.Object)
+                                Name: toString
+                                Modifiers: public
+                                Parameter types: NONE
+                                Return type: java.lang.String
+                                Exceptions: NONE
+                            METHOD (java.lang.Object)
+                                Name: hashCode
+                                Modifiers: public native
+                                Parameter types: NONE
+                                Return type: int
+                                Exceptions: NONE
+                            METHOD (java.lang.Object)
+                                Name: getClass
+                                Modifiers: public final native
+                                Parameter types: NONE
+                                Return type: java.lang.Class
+                                Exceptions: NONE
+                            METHOD (java.lang.Object)
+                                Name: clone
+                                Modifiers: protected native
+                                Parameter types: NONE
+                                Return type: java.lang.Object
+                                Exceptions -> 
+                                    java.lang.CloneNotSupportedException
+                            METHOD (java.lang.Object)
+                                Name: notify
+                                Modifiers: public final native
+                                Parameter types: NONE
+                                Return type: void
+                                Exceptions: NONE
+                            METHOD (java.lang.Object)
+                                Name: notifyAll
+                                Modifiers: public final native
+                                Parameter types: NONE
+                                Return type: void
+                                Exceptions: NONE
+                        Fields (java.lang.Object): NONE 
+                Interfaces (java.lang.String$CaseInsensitiveComparator) ->
+                    INTERFACE (java.lang.String$CaseInsensitiveComparator)
+                        Name: java.util.Comparator
+                        Superclass (java.util.Comparator): NONE
+                        Interfaces (java.util.Comparator): NONE
+                        Constructors (java.util.Comparator): NONE
+                        Methods (java.util.Comparator) -> 
+                            METHOD (java.util.Comparator)
+                                Name: equals
+                                Modifiers: public abstract
+                                Parameter types: [java.lang.Object]
+                                Return type: boolean
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: compare
+                                Modifiers: public abstract
+                                Parameter types: [java.lang.Object, java.lang.Object]
+                                Return type: int
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: reverseOrder
+                                Modifiers: public static
+                                Parameter types: NONE
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: comparing
+                                Modifiers: public static
+                                Parameter types: [java.util.function.Function]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: comparing
+                                Modifiers: public static
+                                Parameter types: [java.util.function.Function, java.util.Comparator]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: thenComparing
+                                Modifiers: public
+                                Parameter types: [java.util.Comparator]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: thenComparing
+                                Modifiers: public
+                                Parameter types: [java.util.function.Function, java.util.Comparator]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: thenComparing
+                                Modifiers: public
+                                Parameter types: [java.util.function.Function]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: comparingInt
+                                Modifiers: public static
+                                Parameter types: [java.util.function.ToIntFunction]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: comparingLong
+                                Modifiers: public static
+                                Parameter types: [java.util.function.ToLongFunction]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: comparingDouble
+                                Modifiers: public static
+                                Parameter types: [java.util.function.ToDoubleFunction]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: lambda$comparingLong$6043328a$1
+                                Modifiers: private static
+                                Parameter types: [java.util.function.ToLongFunction, java.lang.Object, java.lang.Object]
+                                Return type: int
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: lambda$comparing$ea9a8b3a$1
+                                Modifiers: private static
+                                Parameter types: [java.util.Comparator, java.util.function.Function, java.lang.Object, java.lang.Object]
+                                Return type: int
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: lambda$comparing$77a9974f$1
+                                Modifiers: private static
+                                Parameter types: [java.util.function.Function, java.lang.Object, java.lang.Object]
+                                Return type: int
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: lambda$comparingDouble$8dcf42ea$1
+                                Modifiers: private static
+                                Parameter types: [java.util.function.ToDoubleFunction, java.lang.Object, java.lang.Object]
+                                Return type: int
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: lambda$thenComparing$36697e65$1
+                                Modifiers: private
+                                Parameter types: [java.util.Comparator, java.lang.Object, java.lang.Object]
+                                Return type: int
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: lambda$comparingInt$7b0bb60$1
+                                Modifiers: private static
+                                Parameter types: [java.util.function.ToIntFunction, java.lang.Object, java.lang.Object]
+                                Return type: int
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: reversed
+                                Modifiers: public
+                                Parameter types: NONE
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: thenComparingInt
+                                Modifiers: public
+                                Parameter types: [java.util.function.ToIntFunction]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: thenComparingLong
+                                Modifiers: public
+                                Parameter types: [java.util.function.ToLongFunction]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: thenComparingDouble
+                                Modifiers: public
+                                Parameter types: [java.util.function.ToDoubleFunction]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: naturalOrder
+                                Modifiers: public static
+                                Parameter types: NONE
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: nullsFirst
+                                Modifiers: public static
+                                Parameter types: [java.util.Comparator]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: nullsLast
+                                Modifiers: public static
+                                Parameter types: [java.util.Comparator]
+                                Return type: java.util.Comparator
+                                Exceptions: NONE
+                            METHOD (java.util.Comparator)
+                                Name: $deserializeLambda$
+                                Modifiers: private static
+                                Parameter types: [java.lang.invoke.SerializedLambda]
+                                Return type: java.lang.Object
+                                Exceptions: NONE
+                        Fields (java.util.Comparator): NONE 
+                    INTERFACE (java.lang.String$CaseInsensitiveComparator)
+                        Name: java.io.Serializable
+                        Superclass (java.io.Serializable): NONE
+                        Interfaces (java.io.Serializable): NONE
+                        Constructors (java.io.Serializable): NONE
+                        Methods (java.io.Serializable): NONE
+                        Fields (java.io.Serializable): NONE 
+                Constructors (java.lang.String$CaseInsensitiveComparator): NONE
+                Methods (java.lang.String$CaseInsensitiveComparator) -> 
+                    METHOD (java.lang.String$CaseInsensitiveComparator)
+                        Name: compare
+                        Modifiers: public volatile
+                        Parameter types: [java.lang.Object, java.lang.Object]
+                        Return type: int
+                        Exceptions: NONE
+                    METHOD (java.lang.String$CaseInsensitiveComparator)
+                        Name: compare
+                        Modifiers: public
+                        Parameter types: [java.lang.String, java.lang.String]
+                        Return type: int
+                        Exceptions: NONE
+                    METHOD (java.lang.String$CaseInsensitiveComparator)
+                        Name: readResolve
+                        Modifiers: private
+                        Parameter types: NONE
+                        Return type: java.lang.Object
+                        Exceptions: NONE
+                Fields (java.lang.String$CaseInsensitiveComparator) -> 
+                    FIELD (java.lang.String$CaseInsensitiveComparator)
+                        ERROR: Unable to make field private static final long java.lang.String$CaseInsensitiveComparator.serialVersionUID accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+                        Field: private static final long java.lang.String$CaseInsensitiveComparator.serialVersionUID
+                        Object: java.lang.String$CaseInsensitiveComparator@1c20c684
+                        Exception: java.lang.reflect.InaccessibleObjectException: Unable to make field private static final long java.lang.String$CaseInsensitiveComparator.serialVersionUID accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+    FIELD (java.lang.String)
+        ERROR: Unable to make field static final byte java.lang.String.LATIN1 accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+        Field: static final byte java.lang.String.LATIN1
+        Object: Test String
+        Exception: java.lang.reflect.InaccessibleObjectException: Unable to make field static final byte java.lang.String.LATIN1 accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+    FIELD (java.lang.String)
+        ERROR: Unable to make field static final byte java.lang.String.UTF16 accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+        Field: static final byte java.lang.String.UTF16
+        Object: Test String
+        Exception: java.lang.reflect.InaccessibleObjectException: Unable to make field static final byte java.lang.String.UTF16 accessible: module java.base does not "opens java.lang" to unnamed module @681a9515
+======================================================
