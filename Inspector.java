@@ -1,8 +1,7 @@
 import java.lang.reflect.*;
 
 /**
- * CPSC 501
- * Inspector starter class
+ * CPSC 501 Inspector starter class
  *
  * @author Jonathan Hudson
  */
@@ -29,58 +28,73 @@ public class Inspector {
             // note: depth will be needed to capture the output indentation level
             this.print("Name: " + c.getName(), depth);
 
-            if (c != null && c.getSuperclass() != null) {
-                this.print("Superclass (" + c.getName() + ") -> ", depth);
-                this.print("SUPERCLASS (" + c.getName() + ")", depth + 1);
-                this.inspectClass(c.getSuperclass(), obj, recursive, depth + 2);
-            } else {
-                this.print("Superclass (" + c.getName() + "): NONE", depth);
-            }
+            this.inspectSuperClass(c, obj, recursive, depth);
+            this.inspectInterfaces(c, obj, recursive, depth);
+            this.inspectConstructors(c, obj, recursive, depth);
+            this.inspectMethods(c, obj, recursive, depth);
+            this.inspectFields(c, obj, recursive, depth);
+        }
+    }
 
-            Class<?>[] interfaces = c.getInterfaces();
-            if (interfaces != null && interfaces.length != 0) {
-                this.print("Interfaces (" + c.getName() + ") ->", depth);
-                for (Class<?> i : interfaces) {
-                    this.print("INTERFACE (" + c.getName() + ")", depth + 1);
-                    this.inspectClass(i, obj, recursive, depth + 2);
-                }
-            } else {
-                this.print("Interfaces (" + c.getName() + "): NONE", depth);
-            }
+    private void inspectSuperClass(Class<?> c, Object obj, boolean recursive, int depth) {
+        if (c != null && c.getSuperclass() != null) {
+            this.print("Superclass (" + c.getName() + ") -> ", depth);
+            this.print("SUPERCLASS (" + c.getName() + ")", depth + 1);
+            this.inspectClass(c.getSuperclass(), obj, recursive, depth + 2);
+        } else {
+            this.print("Superclass (" + c.getName() + "): NONE", depth);
+        }
+    }
 
-            Constructor<?>[] constructors = c.getConstructors();
-            if (constructors != null && constructors.length != 0) {
-                this.print("Constructors (" + c.getName() + ") -> ", depth);
-                for (Constructor<?> constructor : constructors) {
-                    this.print("CONSTRUCTOR (" + c.getName() + ")", depth + 1);
-                    this.ccccc(constructor, obj, recursive, depth + 2);
-                }
-            } else {
-                this.print("Constructors (" + c.getName() + "): NONE", depth);
+    private void inspectInterfaces(Class<?> c, Object obj, boolean recursive, int depth) {
+        Class<?>[] interfaces = c.getInterfaces();
+        if (interfaces != null && interfaces.length != 0) {
+            this.print("Interfaces (" + c.getName() + ") ->", depth);
+            for (Class<?> i : interfaces) {
+                this.print("INTERFACE (" + c.getName() + ")", depth + 1);
+                this.inspectClass(i, obj, recursive, depth + 2);
             }
+        } else {
+            this.print("Interfaces (" + c.getName() + "): NONE", depth);
+        }
+    }
 
-            Method[] methods = c.getDeclaredMethods();
-            if (methods != null && methods.length != 0) {
-                this.print("Methods (" + c.getName() + ") -> ", depth);
-                for (Method method : methods) {
-                    this.print("METHOD (" + c.getName() + ")", depth + 1);
-                    this.ccccc(method, obj, recursive, depth + 2);
-                }
-            } else {
-                this.print("Methods (" + c.getName() + "): NONE", depth);
+    private void inspectConstructors(Class<?> c, Object obj, boolean recursive, int depth) {
+        Constructor<?>[] constructors = c.getConstructors();
+        if (constructors != null && constructors.length != 0) {
+            this.print("Constructors (" + c.getName() + ") -> ", depth);
+            for (Constructor<?> constructor : constructors) {
+                this.print("CONSTRUCTOR (" + c.getName() + ")", depth + 1);
+                this.inspectExecutable(constructor, obj, recursive, depth + 2);
             }
+        } else {
+            this.print("Constructors (" + c.getName() + "): NONE", depth);
+        }
+    }
 
-            Field[] fields = c.getDeclaredFields();
-            if (fields != null && fields.length != 0) {
-                this.print("Fields (" + c.getName() + ") -> ", depth);
-                for (Field field : fields) {
-                    this.print("FIELD (" + c.getName() + ")", depth + 1);
-                    this.inspectField(c, field, obj, recursive, depth + 2);
-                }
-            } else {
-                this.print("Fields (" + c.getName() + "): NONE ", depth);
+    private void inspectMethods(Class<?> c, Object obj, boolean recursive, int depth) {
+        Method[] methods = c.getDeclaredMethods();
+        if (methods != null && methods.length != 0) {
+            this.print("Methods (" + c.getName() + ") -> ", depth);
+            for (Method method : methods) {
+                this.print("METHOD (" + c.getName() + ")", depth + 1);
+                this.inspectExecutable(method, obj, recursive, depth + 2);
             }
+        } else {
+            this.print("Methods (" + c.getName() + "): NONE", depth);
+        }
+    }
 
+    private void inspectFields(Class<?> c, Object obj, boolean recursive, int depth) {
+        Field[] fields = c.getDeclaredFields();
+        if (fields != null && fields.length != 0) {
+            this.print("Fields (" + c.getName() + ") -> ", depth);
+            for (Field field : fields) {
+                this.print("FIELD (" + c.getName() + ")", depth + 1);
+                this.inspectField(c, field, obj, recursive, depth + 2);
+            }
+        } else {
+            this.print("Fields (" + c.getName() + "): NONE ", depth);
         }
     }
 
@@ -105,7 +119,7 @@ public class Inspector {
         this.print("Modifiers: " + Modifier.toString(field.getModifiers()), depth);
 
         if (isArray) {
-			this.inspectArrayValues(value, false, depth);
+            this.inspectArrayValues(value, false, depth);
         } else {
             this.inspectObjectValue(fieldType, value, recursive, depth);
         }
@@ -151,7 +165,7 @@ public class Inspector {
     }
 
     // https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Executable.html
-    private void ccccc(Executable executable, Object obj, boolean recursive, int depth) {
+    private void inspectExecutable(Executable executable, Object obj, boolean recursive, int depth) {
         this.print("Name: " + executable.getName(), depth);
         this.print("Modifiers: " + Modifier.toString(executable.getModifiers()), depth);
 
@@ -193,5 +207,4 @@ public class Inspector {
                 || clazz.equals(Byte.class) || clazz.equals(Short.class) || clazz.equals(Double.class)
                 || clazz.equals(Long.class) || clazz.equals(Float.class);
     }
-
 }
